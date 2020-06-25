@@ -1,0 +1,127 @@
+* {
+    font: 16px 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 3em 'Piedra', cursive;
+    margin: 10px;
+
+}
+
+h2,
+h3 {
+    font: 2em 'Pangolin', cursive;
+    margin: 10px;
+    border-bottom: #fff 1px solid;
+}
+
+p {
+    margin: 10px;
+}
+
+.header {
+    background-image: url('../img/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.section:nth-of-type(even){
+    height: 50vh;
+    text-align: right;
+    margin: 0;
+    padding: 2.2em;
+    color: #fff;
+    background: linear-gradient(110deg, #343d2e 0%, #687642 35%, #6a7238 100%);
+}
+
+.section:nth-of-type(odd){
+    height: 50vh;
+    text-align: left;
+    margin: 0;
+    padding: 2.2em;
+    color: #fff;
+    background: linear-gradient(110deg, #6a7238 0%, #687642 35%, #343d2e 100%);
+}
+
+footer {
+    background: #000000;
+    margin: 0;
+    padding: 5px;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.fab {
+    position: fixed;
+    color: #fff;
+    z-index: 1000;
+    bottom: 2em;
+    right: 2em;
+    border: none;
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    background: rgb(112, 221, 22);
+    box-shadow: 0.1em 0.1em #687642;
+}
+
+.fab:active {
+    background: rgb(116, 250, 6);
+}
+
+.nav-bar{
+    position: sticky;
+    margin: 0;
+    background: #000000;
+    top: 0;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item:hover,
+.active-nav-item {
+    background: #fff;
+    color: #000;
+}
+
+.active-section {
+    border: #fff solid 2px;
+    background: #343d2e !important;
+}
+
+@media(max-width:400px){
+    * {
+        font: 12px 'Roboto', sans-serif;
+    }
+}
+@media(min-width:401px) and (max-width:600px){
+    * {
+        font: 14px 'Roboto', sans-serif;
+    }
+}
+
+.space-below{
+    height: 50vh;
+}
