@@ -10,11 +10,17 @@ for(const item of sectionList){
     let listItemWrapper = document.createElement('li');
     let listItem = document.createElement('a');
     listItem.textContent = item.firstElementChild.textContent;
-    listItem.setAttribute("href","#" + item.getAttribute('id'));
+    // listItem.setAttribute("href","#" + item.getAttribute('id'));
     listItem.setAttribute("id", item.getAttribute('id') + "-link");
     listItem.setAttribute('class',"nav-item");
     listItemWrapper.appendChild(listItem);
     navList.appendChild(listItemWrapper);
+    // Adding event listner for nav link for smooth scroll...
+    listItem.addEventListener("click",function navClick(e) {
+        e.preventDefault;
+        
+        document.getElementById(item.getAttribute('id')).scrollIntoView({behavior: "smooth", block: "start"});
+    });
 }
 
 // setting event listner for fab to scroll to top
